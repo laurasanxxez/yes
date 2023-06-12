@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+</head>
+<body>
+<main>
+    <p>
+        Consuma a API <a href="https://pokeapi.co/">PokeAPI</a> e exiba na tela uma lista com os 251 primeiros pokemons.
+    </p>
+
+    <div class="pokemon-list">
+        -- Aqui entra a lista de pokemons --
+    </div>
+
+
+</main>
+
+<script>
+    // Uma base aqui para começar
+
+    fetch('https://pokeapi.co/api/v2/pokemon')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+        });
+
+</script>
+    
+</body>
+</html>
